@@ -1,0 +1,142 @@
+.socialmediaContainer{
+    display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	"socialmedia-header"
+	"socialmedia-main"
+	"socialmedia-footer";
+	background-image: url(../assets/img/bg-12.JPEG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $font;
+    margin: 0rem;
+}
+
+.socialmedia-header{
+	grid-area: socialmedia-header;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0rem 1rem;
+	background-color: $bgColor;
+	padding: 0.7rem;
+}
+ 
+.liItem{
+	li:hover{
+		color: $colorNine;
+	}
+} 
+
+.active:active{
+	color: $colorOne;
+}
+
+.sm-nav{
+	.sm-navItem{
+		display: inline;
+		color: $colortwo;
+		margin: 1.7rem;
+		font-size: 1rem;
+		padding-right: 1rem;
+	}
+
+	a{
+		text-decoration: none;
+	}
+}
+
+.logo{
+	padding-left: 1rem;
+}
+
+.socialmedia-main{
+	grid-area: socialmedia-main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $colortwo;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 1.5rem;
+}
+
+.smImgs{
+	margin: 5rem;
+}
+
+.socialmedia-footer{
+	grid-area: socialmedia-footer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $bgColor;
+	color: $colortwo;
+	padding: 1rem;
+}
+
+.footerItem{
+	margin: 1rem;
+}
+
+@media (min-width: 800px) {
+	.menu_bar{
+		display: none;
+	}
+}
+
+@media (max-width: 768px){
+    .logo-icon{
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	padding: 8px 16px;
+    }
+
+    .logo-sm{
+        width: 13rem;
+        padding: 0px 0px 0px 16px;
+    } 
+
+    .btn{
+    	background-color: rgba(220, 220, 220, 0.0);
+    	border-color: 5px solid rgba(0,0,0,.1);
+    	border-radius: 0.2rem;
+    	padding:4px 12px;
+    	box-shadow: none;
+    }
+
+    .socialmedia-header{
+    	padding: 8px 16px;
+    }
+
+    .socialmedia-header, .nav-list, .sm-nav, .liItem{
+    	display: block;
+    	margin: 0rem;
+    	padding: 8px, 0px;
+    }   
+
+    .liItem{
+    	padding: 8px 0px;
+    }
+
+    .nav-list .sm-nav{
+    	padding-left: 0rem;	
+    }
+
+    .socialmedia-main{
+    	padding: 38px;
+    } 
+
+    .socialmediaEncabezado{
+    	font-size: 38px;
+    }
+
+    .smImgs{
+    	margin: 50px;
+    }
+}
+

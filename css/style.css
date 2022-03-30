@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  font-family: "Varela Round"; }
+
+ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  margin: 1.7rem; }
+
+header, footer {
+  background-color: slategray; }
+
+.index-encabezado {
+  color: white; }
+  .index-encabezado h1 {
+    font-size: 3.5rem; }
+  .index-encabezado h2 {
+    font-size: 1.5rem; }
+
+.index-card {
+  margin: 0rem;
+  padding: 1rem; }
+
+.us-text .us-item {
+  color: lightslategrey;
+  font-size: 7rem; }
+
+.us-text span {
+  color: lightsteelblue; }
+
+.us-text .mainUs-itemtwo {
+  color: white;
+  font-size: 1.2rem; }
+
+.review-item, .review-itemtwo, .helpcenter-encabezado-two {
+  color: white; }
+
+.main-review .review-img {
+  padding-bottom: 2rem; }
+
+.main-review .review-itemtwo {
+  padding-top: 2rem; }
+
+.helpcenter-songbox {
+  padding-top: 1.5rem;
+  padding-bottom: 6rem; }
+
+.index-body {
+  background-image: url(../assets/img/bg-5.JPEG); }
+
+.us-body {
+  background-image: url(../assets/img/bg-4.JPEG); }
+
+.review-body {
+  background-image: url(../assets/img/bg-7.JPEG); }
+
+.helpcenter-body {
+  background-image: url(../assets/img/bg-11.JPEG); }
+
+.index-body, .us-body, .review-body, .helpcenter-body {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+  .navbar-collapse .navbar-nav .active > .nav-link {
+    color: lightcyan; }
+  .navbar-collapse .navbar-nav .nav-link {
+    color: white; }
+
+.helpcenter-encabezadoA, .helpcenter-encabezadoB, .helpcenter-encabezadoC {
+  color: lightslategrey;
+  font-size: 5rem; }
+
+.helpcenter-encabezadoB {
+  color: lightsteelblue; }
+
+.helpcenter-encabezadoC {
+  color: silver; }
+
+.boton, .botonenviar, .botonreset {
+  background-color: silver;
+  color: black;
+  padding: 15px 32px;
+  margin: 0.5rem;
+  font-size: 16px;
+  border-radius: 15px;
+  float: left;
+  border: none; }
+
+.botonenviar {
+  background-color: lightsteelblue; }
+
+.botonreset {
+  background-color: dimgray; }
+
+h1, h2, .mainUs-itemtwo, label, span {
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.main-index, .main-us, .main-review, .main-helpcenter, .socialmedia-main {
+  padding: 3rem;
+  margin: 0; }
+
+.socialmediaContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "socialmedia-header" "socialmedia-main" "socialmedia-footer";
+  background-image: url(../assets/img/bg-12.JPEG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round";
+  margin: 0rem; }
+
+.socialmedia-header {
+  grid-area: socialmedia-header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+  background-color: slategray;
+  padding: 0.7rem; }
+
+.liItem li:hover {
+  color: black; }
+
+.active:active {
+  color: lightcyan; }
+
+.sm-nav .sm-navItem {
+  display: inline;
+  color: white;
+  margin: 1.7rem;
+  font-size: 1rem;
+  padding-right: 1rem; }
+
+.sm-nav a {
+  text-decoration: none; }
+
+.logo {
+  padding-left: 1rem; }
+
+.socialmedia-main {
+  grid-area: socialmedia-main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 1.5rem; }
+
+.smImgs {
+  margin: 5rem; }
+
+.socialmedia-footer {
+  grid-area: socialmedia-footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: slategray;
+  color: white;
+  padding: 1rem; }
+
+.footerItem {
+  margin: 1rem; }
+
+@media (min-width: 800px) {
+  .menu_bar {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .logo-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px; }
+  .logo-sm {
+    width: 13rem;
+    padding: 0px 0px 0px 16px; }
+  .btn {
+    background-color: rgba(220, 220, 220, 0);
+    border-color: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+    padding: 4px 12px;
+    box-shadow: none; }
+  .socialmedia-header {
+    padding: 8px 16px; }
+  .socialmedia-header, .nav-list, .sm-nav, .liItem {
+    display: block;
+    margin: 0rem;
+    padding: 8px, 0px; }
+  .liItem {
+    padding: 8px 0px; }
+  .nav-list .sm-nav {
+    padding-left: 0rem; }
+  .socialmedia-main {
+    padding: 38px; }
+  .socialmediaEncabezado {
+    font-size: 38px; }
+  .smImgs {
+    margin: 50px; } }
+
+footer {
+  padding: 1rem; }
+
+.footertext {
+  color: white; }
+
+.footeritem {
+  margin: 1rem; }
+
+@media (max-width: 768px) {
+  .logo {
+    width: 14rem; }
+  ul li {
+    margin: 0rem; }
+  .img-index {
+    width: 20rem; }
+  .index-encabezado h1 {
+    font-size: 1rem; }
+  .index-encabezado h2 {
+    font-size: 0.8rem; }
+  .boton, .botonenviar, .botonreset {
+    background-color: none;
+    color: black;
+    font-size: 16px;
+    border-radius: none;
+    float: left;
+    border: none; }
+  .main-us {
+    margin: 0;
+    padding: 0.5rem; }
+  .us-item, .us-itemspecial {
+    font-size: 1rem; }
+  .helpcenter-encabezadoA, .helpcenter-encabezadoB, .helpcenter-encabezadoC, .helpcenter-encabezadoB, .helpcenter-encabezadoC {
+    font-size: 1.5rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.3rem; }
+  .helpcenter-songbox {
+    padding-bottom: 3rem; }
+  .encabezadotwo-item {
+    font-size: 1.5rem; } }
